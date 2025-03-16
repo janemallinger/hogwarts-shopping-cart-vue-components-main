@@ -1,14 +1,15 @@
 <template>
-  <ShoppingCart class="shopping-cart"></ShoppingCart>
+  <router-view></router-view>
 </template>
 
-<script setup>
-import ShoppingCart from '@/components/ShoppingCart.vue'
+<script>
+export default {
+  name: 'App'
+};
 </script>
 
-<style scoped>
-/* Styles for the shopping cart */
-.shopping-cart {
+<style>
+.page {
   font-family: 'Arial', sans-serif;
   background-color: #f8f8f8;
   margin: 0;
